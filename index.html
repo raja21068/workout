@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #4a90e2, #50e3c2);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Top Section */
+        .top-section {
+            background-color: #4a90e2;
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .top-section .info {
+            flex: 1;
+        }
+
+        .top-section .info h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .top-section .info p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+
+        .top-section img {
+            width: 120px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Main Content Area */
+        .content {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .day-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .day-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .day-card h2 {
+            margin: 0;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .day-card p {
+            margin: 5px 0 0;
+            font-size: 16px;
+            color: #777;
+        }
+
+        .day-card button {
+            background: linear-gradient(135deg, #50e3c2, #4a90e2);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .day-card button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+        }
+		
+		/* Add specific styling for Rest Day */
+		.rest-day {
+			background-color: #f0f8ff; /* Light blue for a calming effect */
+			border: 2px dashed #4a90e2; /* Dashed border to signify rest/recovery */
+			text-align: center;
+		}
+
+		.rest-day-icon {
+			margin-top: 10px;
+		}
+
+		.rest-day-icon img {
+			width: 60px; /* Adjust the size of the icon */
+			height: auto;
+			opacity: 0.9; /* Slight transparency for a softer look */
+		}
+
+
+        /* Bottom Navigation Bar */
+        .bottom-nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #ffffff;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 12px 0;
+            border-top: 3px solid #4a90e2;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .bottom-nav .nav-item {
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .bottom-nav .nav-item img {
+            width: 30px;
+            height: 30px;
+            margin-bottom: 5px;
+            filter: grayscale(100%);
+            transition: filter 0.3s, transform 0.3s;
+        }
+
+        .bottom-nav .nav-item.active {
+            color: #4a90e2;
+        }
+
+        .bottom-nav .nav-item.active img {
+            filter: grayscale(0%);
+        }
+
+        .bottom-nav .nav-item:hover {
+            color: #4a90e2;
+            transform: translateY(-3px);
+        }
+
+        .bottom-nav .nav-item:hover img {
+            filter: grayscale(0%);
+            transform: scale(1.2);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Section -->
+    <div class="top-section">
+        <div class="info">
+            <h1>FULL BODY WORKOUT</h1>
+            <p><strong>Beginner</strong></p>
+            <p>30 Days Left</p>
+        </div>
+        <img src="images/13.jpg" alt="Trainer Image">
+    </div>
+
+   <!-- Main Content Area -->
+<div class="content">
+    <!-- Repeat up to 30 days -->
+    <!-- Day 1 -->
+    <div class="day-card">
+        <div>
+            <h2>Day 1</h2>
+            <p>20 minutes</p>
+        </div>
+        <a href="day1.html"><button>START</button></a>
+    </div>
+    <!-- Day 2 -->
+    <div class="day-card">
+        <div>
+            <h2>Day 2</h2>
+            <p>30 minutes</p>
+        </div>
+        <a href="day2.html"><button>START</button></a>
+    </div>
+    <!-- Day 3 -->
+    <div class="day-card">
+        <div>
+            <h2>Day 3</h2>
+            <p>20 minutes</p>
+        </div>
+        <a href="day3.html"><button>START</button></a>
+    </div>
+    <!-- Day 4 (Rest Day) -->
+    <div class="day-card rest-day">
+        <div>
+            <h2>Day 4</h2>
+            <p>Rest Day</p>
+        </div>
+        <!-- Rest Day Icon -->
+        <div class="rest-day-icon">
+            <img src="images/rest.png" alt="Rest Day Icon" />
+        </div>
+    </div>
+    <!-- Day 5 -->
+    <div class="day-card">
+        <div>
+            <h2>Day 5</h2>
+            <p>30 minutes</p>
+        </div>
+        <a href="day5.html"><button>START</button></a>
+    </div>
+    <!-- Day 6 -->
+    <div class="day-card">
+        <div>
+            <h2>Day 6</h2>
+            <p>30 minutes</p>
+        </div>
+        <a href="day6.html"><button>START</button></a>
+    </div>
+    <!-- Day 7 -->
+    <div class="day-card">
+        <div>
+            <h2>Day 7</h2>
+            <p>30 minutes</p>
+        </div>
+        <a href="day7.html"><button>START</button></a>
+    </div>
+    <!-- Day 8 (Rest Day) -->
+    <div class="day-card rest-day">
+        <div>
+            <h2>Day 8</h2>
+            <p>Rest Day</p>
+        </div>
+        <!-- Rest Day Icon -->
+        <div class="rest-day-icon">
+            <img src="images/rest.png" alt="Rest Day Icon" />
+        </div>
+    </div>
+    <!-- Day 9 -->
+    <div class="day-card">
+        <div>
+            <h2>Day 9</h2>
+            <p>30 minutes</p>
+        </div>
+        <a href="day2.html"><button>START</button></a>
+    </div>
+    <!-- Day 10 -->
+    <div class="day-card">
+        <div>
+            <h2>Day 10</h2>
+            <p>30 minutes</p>
+        </div>
+        <a href="day3.html"><button>START</button></a>
+    </div>
+    <!-- Day 11 -->
+    <div class="day-card">
+        <div>
+            <h2>Day 11</h2>
+            <p>30 minutes</p>
+        </div>
+        <a href="day4.html"><button>START</button></a>
+    </div>
+    <!-- Day 12 (Rest Day) -->
+    <div class="day-card rest-day">
+        <div>
+            <h2>Day 12</h2>
+            <p>Rest Day</p>
+        </div>
+        <!-- Rest Day Icon -->
+        <div class="rest-day-icon">
+            <img src="images/rest.png" alt="Rest Day Icon" />
+        </div>
+    </div>
+    <!-- Day 13 -->
+    <div class="day-card">
+        <div>
+            <h2>Day 13</h2>
+            <p>30 minutes</p>
+        </div>
+        <a href="day5.html"><button>START</button></a>
+    </div>
+    <!-- Day 14 -->
+    <div class="day-card">
+        <div>
+            <h2>Day 14</h2>
+            <p>30 minutes</p>
+        </div>
+        <a href="day6.html"><button>START</button></a>
+    </div>
+    <!-- Day 15 -->
+    <div class="day-card">
+        <div>
+            <h2>Day 15</h2>
+            <p>30 minutes</p>
+        </div>
+        <a href="day7.html"><button>START</button></a>
+    </div>
+    <!-- Day 16 (Rest Day) -->
+    <div class="day-card rest-day">
+        <div>
+            <h2>Day 16</h2>
+            <p>Rest Day</p>
+        </div>
+        <!-- Rest Day Icon -->
+        <div class="rest-day-icon">
+            <img src="images/rest.png" alt="Rest Day Icon" />
+        </div>
+    </div>
+    <!-- Day 17 -->
+    <div class="day-card">
+        <div>
+            <h2>Day 17</h2>
+            <p>30 minutes</p>
+        </div>
+        <a href="day4.html"><button>START</button></a>
+    </div>
+    <!-- Day 18 -->
+    <div class="day-card">
+        <div>
+            <h2>Day 18</h2>
+            <p>30 minutes</p>
+        </div>
+        <a href="day5.html"><button>START</button></a>
+    </div>
+    <!-- Day 19 -->
+    <div class="day-card">
+        <div>
+            <h2>Day 19</h2>
+            <p>30 minutes</p>
+        </div>
+        <a href="day19.html"><button>START</button></a>
+    </div>
+    <!-- Day 20 (Rest Day) -->
+    <div class="day-card rest-day">
+        <div>
+            <h2>Day 20</h2>
+            <p>Rest Day</p>
+        </div>
+        <!-- Rest Day Icon -->
+        <div class="rest-day-icon">
+            <img src="images/rest.png" alt="Rest Day Icon" />
+        </div>
+    </div>
+    <!-- Day 21 -->
+    <div class="day-card">
+        <div>
+            <h2>Day 21</h2>
+            <p>30 minutes</p>
+        </div>
+        <a href="day3.html"><button>START</button></a>
+    </div>
+    <!-- Day 22 -->
+    <div class="day-card">
+        <div>
+            <h2>Day 22</h2>
+            <p>30 minutes</p>
+        </div>
+        <a href="day2.html"><button>START</button></a>
+    </div>
+    <!-- Day 23 -->
+    <div class="day-card">
+        <div>
+            <h2>Day 23</h2>
+            <p>10 minutes</p>
+        </div>
+        <a href="day1.html"><button>START</button></a>
+    </div>
+    <!-- Day 24 (Rest Day) -->
+    <div class="day-card rest-day">
+        <div>
+            <h2>Day 24</h2>
+            <p>Rest Day</p>
+        </div>
+        <!-- Rest Day Icon -->
+        <div class="rest-day-icon">
+            <img src="images/rest.png" alt="Rest Day Icon" />
+        </div>
+    </div>
+    <!-- Day 25 -->
+    <div class="day-card">
+        <div>
+            <h2>Day 25</h2>
+            <p>20 minutes</p>
+        </div>
+        <a href="day2.html"><button>START</button></a>
+    </div>
+    <!-- Day 26 -->
+    <div class="day-card">
+        <div>
+            <h2>Day 26</h2>
+            <p>30 minutes</p>
+        </div>
+        <a href="day3.html"><button>START</button></a>
+    </div>
+    <!-- Day 27 -->
+    <div class="day-card">
+        <div>
+            <h2>Day 27</h2>
+            <p>10 minutes</p>
+        </div>
+        <a href="day4.html"><button>START</button></a>
+    </div>
+    <!-- Day 28 (Rest Day) -->
+    <div class="day-card rest-day">
+        <div>
+            <h2>Day 28</h2>
+            <p>Rest Day</p>
+        </div>
+        <!-- Rest Day Icon -->
+        <div class="rest-day-icon">
+            <img src="images/rest.png" alt="Rest Day Icon" />
+        </div>
+    </div>
+    <!-- Day 29 -->
+    <div class="day-card">
+        <div>
+            <h2>Day 29</h2>
+            <p>20 minutes</p>
+        </div>
+        <a href="day5.html"><button>START</button></a>
+    </div>
+    <!-- Day 30 -->
+    <div class="day-card">
+        <div>
+            <h2>Day 30</h2>
+            <p>30 minutes</p>
+        </div>
+        <a href="day6.html"><button>START</button></a>
+    </div>
+</div>
+	
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+    <!-- Bottom Navigation Bar -->
+    <div class="bottom-nav">
+        <a href="recipies.html" class="nav-item active">
+            <img src="images/recipies.jpg" alt="Training Icon">
+            <p>Recipies</p>
+        </a>
+		
+		    <a href="discover.html" class="nav-item">
+            <img src="images/discover.jpg" alt="Discover Icon">
+            <p>Discover</p>
+        </a>
+		 
+        <a href="plan.html" class="nav-item active">
+            <img src="images/plan.jpg" alt="Training Icon">
+            <p>Plan</p>
+        </a>
+		
+		
+        <a href="training.html" class="nav-item">
+            <img src="images/traning.jpg" alt="Reports Icon">
+            <p>Training</p>
+        </a>
+		
+		
+        <a href="report.html" class="nav-item">
+            <img src="images/report.jpg" alt="Settings Icon">
+            <p>Diet Plan</p>
+        </a>
+    </div>
+
+</body>
+</html>

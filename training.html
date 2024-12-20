@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aerobatic Training Exercises</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #4CAF50;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            text-align: center;
+            font-size: 1.2em;
+            margin: 10px 20px;
+            color: #555;
+        }
+
+        /* Video Grid Styles */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .video-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-card iframe {
+            width: 100%;
+            height: 200px;
+        }
+
+        .video-card h2 {
+            font-size: 1.2em;
+            text-align: center;
+            margin: 10px 0;
+            padding: 0 10px;
+            color: #333;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .video-card iframe {
+                height: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .video-card iframe {
+                height: 120px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .description {
+                font-size: 1em;
+            }
+        }
+		
+		
+		/* Bottom Navigation Bar */
+        .bottom-nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #ffffff;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 10px 0;
+            border-top: 2px solid #4a90e2;
+        }
+
+        .bottom-nav .nav-item {
+            text-align: center;
+            font-size: 14px;
+            color: gray;
+            transition: color 0.3s;
+        }
+
+        .bottom-nav .nav-item img {
+            width: 30px;
+            height: 30px;
+            margin-bottom: 5px;
+            filter: grayscale(100%);
+            transition: filter 0.3s;
+        }
+
+        .bottom-nav .nav-item.active {
+            color: #4a90e2;
+        }
+
+        .bottom-nav .nav-item.active img {
+            filter: none;
+        }
+
+        .bottom-nav .nav-item:hover {
+            color: #4a90e2;
+        }
+
+        .bottom-nav .nav-item:hover img {
+            filter: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+	
+    </style>
+</head>
+<body>
+    <h1>Aerobatic Training Exercises</h1>
+    <p class="description">Explore the best aerobatic training exercises with these short and engaging video tutorials. Perfect for fitness enthusiasts and beginners!</p>
+    
+    <div class="video-grid">
+        <!-- Video 1 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/15RzxSQf0hU" frameborder="0" allowfullscreen></iframe>
+            <h2>Video 1: Aerobatic Warm-Up</h2>
+        </div>
+        <!-- Video 2 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/x_cecJlaCYk" frameborder="0" allowfullscreen></iframe>
+            <h2>Video 2: Core Aerobatic Techniques</h2>
+        </div>
+        <!-- Video 3 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/bkECdTUhchY" frameborder="0" allowfullscreen></iframe>
+            <h2>Video 3: Strength Training</h2>
+        </div>
+        <!-- Video 4 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/HlMcBxkEDjk" frameborder="0" allowfullscreen></iframe>
+            <h2>Video 4: Full Body Aerobics</h2>
+        </div>
+        <!-- Video 5 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/t0i82z90DT8" frameborder="0" allowfullscreen></iframe>
+            <h2>Video 5: Aerobatic Cardio</h2>
+        </div>
+        <!-- Video 6 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/3qi1mWL7Al0" frameborder="0" allowfullscreen></iframe>
+            <h2>Video 6: Flexibility and Endurance</h2>
+        </div>
+        <!-- Video 7 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/ZylNrDUmtr4" frameborder="0" allowfullscreen></iframe>
+            <h2>Video 7: Advanced Aerobatics</h2>
+        </div>
+        <!-- Video 8 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/bWfTbEF0u5E" frameborder="0" allowfullscreen></iframe>
+            <h2>Video 8: Beginner Tips</h2>
+        </div>
+        <!-- Video 9 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/tmAwB-2LB68" frameborder="0" allowfullscreen></iframe>
+            <h2>Video 9: Cool Down Routine</h2>
+        </div>
+        <!-- Video 10 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/XUUuO2pPDZ4" frameborder="0" allowfullscreen></iframe>
+            <h2>Video 10: Coordination Exercises</h2>
+        </div>
+        <!-- Video 11 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/YWbHjTGpT_E" frameborder="0" allowfullscreen></iframe>
+            <h2>Video 11: Improving Endurance</h2>
+        </div>
+        <!-- Video 12 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/v3SK8ksDzxg" frameborder="0" allowfullscreen></iframe>
+            <h2>Video 12: Advanced Strength Drills</h2>
+        </div>
+        <!-- Video 13 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/Y-kh0PMND94" frameborder="0" allowfullscreen></iframe>
+            <h2>Video 13: Dynamic Movements</h2>
+        </div>
+        <!-- Video 14 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/HIT59S8VfOs" frameborder="0" allowfullscreen></iframe>
+            <h2>Video 14: Complete Aerobatic Routine</h2>
+        </div>
+        <!-- Video 15 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/4UZgtBQMDPQ" frameborder="0" allowfullscreen></iframe>
+            <h2>Video 15: Recovery Stretches</h2>
+        </div>
+        <!-- Video 16 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/BCsOyg1HQzk" frameborder="0" allowfullscreen></iframe>
+            <h2>Video 16: Cardio Aerobics</h2>
+        </div>
+        <!-- Video 17 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/IW21GhnYXvM" frameborder="0" allowfullscreen></iframe>
+            <h2>Video 17: Quick Full-Body Workout</h2>
+        </div>
+        <!-- Video 18 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/I8naPPcT_-c" frameborder="0" allowfullscreen></iframe>
+            <h2>Video 18: Low-Impact Aerobics</h2>
+        </div>
+        <!-- Add more videos similarly -->
+    </div>
+	
+	</br>
+</br>
+</br>
+</br>
+   </br>
+       <!-- Bottom Navigation Bar -->
+    <div class="bottom-nav">
+        <a href="recipies.html" class="nav-item active">
+            <img src="images/recipies.jpg" alt="Training Icon">
+            <p>Recipies</p>
+        </a>
+		
+		    <a href="discover.html" class="nav-item">
+            <img src="images/discover.jpg" alt="Discover Icon">
+            <p>Discover</p>
+        </a>
+		 
+        <a href="plan.html" class="nav-item active">
+            <img src="images/plan.jpg" alt="Training Icon">
+            <p>Plan</p>
+        </a>
+		
+		
+        <a href="training.html" class="nav-item">
+            <img src="images/traning.jpg" alt="Reports Icon">
+            <p>Training</p>
+        </a>
+		
+		
+        <a href="report.html" class="nav-item">
+            <img src="images/report.jpg" alt="Settings Icon">
+            <p>Diet Plan</p>
+        </a>
+    </div>
+</body>
+</html>

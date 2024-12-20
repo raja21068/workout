@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1 - Workout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #4a90e2, #50e3c2);
+            color: #333;
+        }
+
+        header {
+            background-color: #4a90e2;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.8em;
+            font-weight: bold;
+            border-bottom: 5px solid #ffffff;
+        }
+
+        .content {
+            padding: 20px;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
+
+        .video-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-card iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+
+        .video-details {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .video-details h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .video-details p {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        footer {
+            background-color: #4a90e2;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.9em;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+
+    <header>Day 1 - Full Body Workout</header>
+
+    <div class="content">
+        <!-- Video 1 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/g0ptmkIdfMY" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Full Body Warm-Up</h3>
+                <p>Duration: 4 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/oEQDdc4btv8" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Stretch & Flexibility</h3>
+                <p>Duration: 4 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/QRZp0R1qjf4" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Core Strengthening</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/qaAqOOsbYpw" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Upper Body Focus</h3>
+                <p>Duration: 6 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 5 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/ChttNE3y19s" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Lower Body Strength</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 6 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/9LeatEA0Y74" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Quick Cardio</h3>
+                <p>Duration: 2 minutes</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2024 Workout XerCise. Keep pushing your limits!
+    </footer>
+
+</body>
+</html>

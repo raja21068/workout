@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout XerCise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .search-bar {
+            margin: 15px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-bar input {
+            width: 90%;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        section h2 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+            font-size: 1em;
+            color: #333;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Add these styles for horizontal cards in the Training Goals section */
+        .horizontal-cards {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            gap: 15px;
+            padding-bottom: 10px;
+        }
+
+        .horizontal-card {
+            flex: 0 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .horizontal-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .horizontal-card h3 {
+            margin: 10px 0;
+            font-size: 1em;
+            color: #333;
+        }
+
+        .horizontal-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Optional: Add horizontal scrolling styles */
+        .horizontal-cards::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .horizontal-cards::-webkit-scrollbar-thumb {
+            background-color: #ccc;
+            border-radius: 4px;
+        }
+
+        .horizontal-cards::-webkit-scrollbar-thumb:hover {
+            background-color: #999;
+        }
+
+        .footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-size: 0.9em;
+        }
+        
+        /* Add these styles specifically for Training Goals cards */
+        section h2 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        /* Target Training Goals section specifically */
+        .training-goals .card img {
+            height: 150px; /* Adjust the image height */
+            width: auto;  /* Maintain aspect ratio */
+            object-fit: cover; /* Make sure the image covers the space without distortion */
+        }
+        
+        /* Bottom Navigation Bar */
+        .bottom-nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #ffffff;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 10px 0;
+            border-top: 2px solid #4a90e2;
+        }
+
+        .bottom-nav .nav-item {
+            text-align: center;
+            font-size: 14px;
+            color: gray;
+            transition: color 0.3s;
+        }
+
+        .bottom-nav .nav-item img {
+            width: 30px;
+            height: 30px;
+            margin-bottom: 5px;
+            filter: grayscale(100%);
+            transition: filter 0.3s;
+        }
+
+        .bottom-nav .nav-item.active {
+            color: #4a90e2;
+        }
+
+        .bottom-nav .nav-item.active img {
+            filter: none;
+        }
+
+        .bottom-nav .nav-item:hover {
+            color: #4a90e2;
+        }
+
+        .bottom-nav .nav-item:hover img {
+            filter: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+
+    <header>Discover Workout</header>
+
+    <!-- <div class="search-bar">
+        <input type="text" placeholder="Search Workouts...">
+    </div> -->
+
+    <section>
+        <h2>Popular</h2>
+        <div class="cards">
+            <a href="dietplan/1_Choosing_Healthy_Foods_Drinks.html" class="card">
+                <img src="dietplan/images-e/food-guide-visual-en.webp" alt="Full Body HIIT">
+                <h3>Choosing Healthy Foods and Drinks</h3>
+            </a>
+            <a href="dietplan/2_Four_Essential_Healthy_Eating_Habits.html" class="card">
+                <img src="dietplan/images-e/16-2.png" alt="Lose Belly Fat">
+                <h3>Four Essential Habits</h3>
+            </a>
+            <a href="dietplan/3.tips.html" class="card">
+                <img src="dietplan/images-e/environment.webp" alt="Post-Workout Hip Stretch">
+                <h3>Keep Unhealthy Items Out</h3>
+            </a>
+            <a href="dietplan/4-eating-habbits.html" class="card">
+                <img src="dietplan/images-e/6.png" alt="12-Minute Wider Hips Workout">
+                <h3>Mindful Eating Strategies</h3>
+            </a>
+           
+        </div>
+    </section>
+
+    <section>
+        <h2>How You Eat and What You eat</h2>
+        <div class="cards">
+            <a href="dietplan/how-to-eat.html" class="card">
+                <img src="dietplan/images-e/chew.jpg" alt="2-Minute Leg Workout">
+                <h3>How You Eat</h3>
+            </a>
+            <a href="dietplan/food-law.html" class="card">
+                <img src="dietplan/images-e/1.png" alt="2-Minute Butt Workout">
+                <h3>A Balanced Nutritious Lifestyle</h3>
+            </a>
+            
+        </div>
+    </section>
+
+    <section>
+        <h2>Lose Weight Focus</h2>
+        <div class="cards">
+            <a href="dietplan/dietplan.html" class="card">
+                <img src="dietplan/images-e/mealplanning.png" alt="7-Minute Workout">
+                <h3>Diet Plan</h3>
+            </a>
+            <a href="dietplan/food-combine-in.html" class="card">
+                <img src="dietplan/images-e/3x.png" alt="Bikini Ready">
+                <h3>Food Combine Law</h3>
+            </a>
+          
+        </div>
+    </section>
+
+    <section class="training-goals">
+        <h2>Healthy Eating Guide </h2>
+        <div class="cards">
+            <a href="dietplan/eating2.html" class="card">
+                <img src="dietplan/images-e/my-healthy-plate.jpg" alt="Fat Burning">
+                <h3>Fat Burning and Healthy Eating Guide</h3>
+            </a>
+            <a href="dietplan/water-rich-plant-based-diet.html" class="card">
+                <img src="dietplan/images-e/garden-salad-and-olive-oil.jpg" alt="Angel Body">
+                <h3>Plant Based Diet</h3>
+            </a>
+            
+        </div>
+    </section>
+
+   
+
+   </br>
+   </br>
+   </br>
+   </br>
+   </br>
+   
+   </br>
+   </br>
+   </br>
+
+    <!-- Bottom Navigation Bar -->
+    <div class="bottom-nav">
+        <a href="recipies.html" class="nav-item active">
+            <img src="images/recipies.jpg" alt="Training Icon">
+            <p>Recipies</p>
+        </a>
+        
+        <a href="discover.html" class="nav-item">
+            <img src="images/discover.jpg" alt="Discover Icon">
+            <p>Discover</p>
+        </a>
+        
+        <a href="plan.html" class="nav-item active">
+            <img src="images/plan.jpg" alt="Training Icon">
+            <p>Plan</p>
+        </a>
+        
+        <a href="training.html" class="nav-item">
+            <img src="images/traning.jpg" alt="Reports Icon">
+            <p>Training</p>
+        </a>
+        
+        <a href="report.html" class="nav-item">
+            <img src="images/report.jpg" alt="Settings Icon">
+            <p>Diet Plan</p>
+        </a>
+    </div>
+</body>
+</html>
