@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 Days Meal Plan</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #ffffff;
+            padding: 15px 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        header h1 {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        /* Highlight Section */
+        .highlight-section {
+            background-color: #fff9db;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 15px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .highlight-section h2 {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333333;
+            margin-bottom: 10px;
+        }
+
+        .highlight-section p {
+            font-size: 0.9em;
+            color: #666666;
+            margin-bottom: 15px;
+        }
+
+        .highlight-section .shopping-list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            border-radius: 25px;
+            padding: 10px 15px;
+            color: #333333;
+            font-size: 1em;
+            font-weight: bold;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .highlight-section .shopping-list:hover {
+            background-color: #eeeeee;
+        }
+
+        .highlight-section .shopping-list img {
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+        }
+
+        /* Days Grid */
+        .days-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .day-tile {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px 0;
+            text-align: center;
+            font-weight: bold;
+            color: #333333;
+            font-size: 1em;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .day-tile:hover {
+            background-color: #eeeeee;
+            transform: translateY(-2px);
+        }
+
+         /* Bottom Navigation Bar */
+        .bottom-nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #ffffff;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 10px 0;
+            border-top: 2px solid #4a90e2;
+        }
+
+        .bottom-nav .nav-item {
+            text-align: center;
+            font-size: 14px;
+            color: gray;
+            transition: color 0.3s;
+        }
+
+        .bottom-nav .nav-item img {
+            width: 30px;
+            height: 30px;
+            margin-bottom: 5px;
+            filter: grayscale(100%);
+            transition: filter 0.3s;
+        }
+
+        .bottom-nav .nav-item.active {
+            color: #4a90e2;
+        }
+
+        .bottom-nav .nav-item.active img {
+            filter: none;
+        }
+
+        .bottom-nav .nav-item:hover {
+            color: #4a90e2;
+        }
+
+        .bottom-nav .nav-item:hover img {
+            filter: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+	
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>RECIPES</h1>
+    </header>
+
+    <!-- Highlight Section -->
+    <div class="highlight-section">
+        <h2>30 Days Meal Plan</h2>
+        <p>Free recipes for your reference</p>
+        <a href="shopping-list.html" class="shopping-list">
+            <img src="shopping-cart-icon.png" alt="Shopping List Icon">
+            Shopping List
+        </a>
+    </div>
+
+   <div class="days-grid">
+    <a href="usa/day1.html" class="day-tile">Day 1</a>
+    <a href="usa/day2.html" class="day-tile">Day 2</a>
+    <a href="usa/day3.html" class="day-tile">Day 3</a>
+    <a href="usa/day4.html" class="day-tile">Day 4</a>
+    <a href="usa/day5.html" class="day-tile">Day 5</a>
+    <a href="usa/day6.html" class="day-tile">Day 6</a>
+    <a href="usa/day7.html" class="day-tile">Day 7</a>
+    <a href="usa/day1.html" class="day-tile">Day 8</a>
+    <a href="usa/day2.html" class="day-tile">Day 9</a>
+    <a href="usa/day3.html" class="day-tile">Day 10</a>
+    <a href="usa/day4.html" class="day-tile">Day 11</a>
+    <a href="usa/day5.html" class="day-tile">Day 12</a>
+    <a href="usa/day6.html" class="day-tile">Day 13</a>
+    <a href="usa/day7.html" class="day-tile">Day 14</a>
+    <a href="usa/day1.html" class="day-tile">Day 15</a>
+    <a href="usa/day2.html" class="day-tile">Day 16</a>
+    <a href="usa/day3.html" class="day-tile">Day 17</a>
+    <a href="usa/day4.html" class="day-tile">Day 18</a>
+    <a href="usa/day5.html" class="day-tile">Day 19</a>
+    <a href="usa/day6.html" class="day-tile">Day 20</a>
+    <a href="usa/day7.html" class="day-tile">Day 21</a>
+    <a href="usa/day1.html" class="day-tile">Day 22</a>
+    <a href="usa/day2.html" class="day-tile">Day 23</a>
+    <a href="usa/day3.html" class="day-tile">Day 24</a>
+    <a href="usa/day4.html" class="day-tile">Day 25</a>
+    <a href="usa/day5.html" class="day-tile">Day 26</a>
+    <a href="usa/day6.html" class="day-tile">Day 27</a>
+    <a href="usa/day7.html" class="day-tile">Day 28</a>
+    <a href="usa/day1.html" class="day-tile">Day 29</a>
+    <a href="usa/day2.html" class="day-tile">Day 30</a>
+</div>
+
+    <div class="bottom-nav">
+        <a href="recipies.html" class="nav-item active">
+            <img src="../images/recipies.jpg" alt="Training Icon">
+            <p>Recipies</p>
+        </a>
+		
+		    <a href="discover.html" class="nav-item">
+            <img src="../images/discover.jpg" alt="Discover Icon">
+            <p>Discover</p>
+        </a>
+		 
+        <a href="plan.html" class="nav-item active">
+            <img src="../images/plan.jpg" alt="Training Icon">
+            <p>Plan</p>
+        </a>
+		
+		
+        <a href="training.html" class="nav-item">
+            <img src="../images/traning.jpg" alt="Reports Icon">
+            <p>Training</p>
+        </a>
+		
+		
+        <a href="report.html" class="nav-item">
+            <img src="../images/report.jpg" alt="Settings Icon">
+            <p>Diet Plan</p>
+        </a>
+    </div>
+
+</body>
+</html>
