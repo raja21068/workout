@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Cuisine Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f7d9c4, #f4a460);
+            color: #333;
+        }
+
+        header {
+            background-color: #ff7043;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 20px;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
+
+        .country-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .country-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .country-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .country-details {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .country-details h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .country-details p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .country-details a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #ff7043;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .country-details a:hover {
+            background-color: #e64a19;
+        }
+
+        footer {
+            background-color: #ff7043;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>World Cuisine Recipes</header>
+
+    <div class="content">
+        <!-- Italy -->
+        <div class="country-card">
+            <img src="images/italy.jpg" alt="Italian Cuisine">
+            <div class="country-details">
+                <h3>Italy</h3>
+                <p>Famous for pizza, pasta, and gelato.</p>
+                <a href="italy-recipes.html">View Recipes</a>
+            </div>
+        </div>
+
+        <!-- China -->
+        <div class="country-card">
+            <img src="images/china.jpg" alt="Chinese Cuisine">
+            <div class="country-details">
+                <h3>China</h3>
+                <p>Known for dumplings, fried rice, and Peking duck.</p>
+                <a href="china-recipes.html">View Recipes</a>
+            </div>
+        </div>
+
+        <!-- India -->
+        <div class="country-card">
+            <img src="images/india.jpg" alt="Indian Cuisine">
+            <div class="country-details">
+                <h3>India</h3>
+                <p>Renowned for curry, biryani, and naan.</p>
+                <a href="india-recipes.html">View Recipes</a>
+            </div>
+        </div>
+
+        <!-- Mexico -->
+        <div class="country-card">
+            <img src="images/mexico.jpg" alt="Mexican Cuisine">
+            <div class="country-details">
+                <h3>Mexico</h3>
+                <p>Home of tacos, burritos, and enchiladas.</p>
+                <a href="mexico-recipes.html">View Recipes</a>
+            </div>
+        </div>
+
+        <!-- Japan -->
+        <div class="country-card">
+            <img src="images/japan.jpg" alt="Japanese Cuisine">
+            <div class="country-details">
+                <h3>Japan</h3>
+                <p>Famous for sushi, ramen, and tempura.</p>
+                <a href="japan-recipes.html">View Recipes</a>
+            </div>
+        </div>
+
+        <!-- Thailand -->
+        <div class="country-card">
+            <img src="images/thailand.jpg" alt="Thai Cuisine">
+            <div class="country-details">
+                <h3>Thailand</h3>
+                <p>Known for Pad Thai, tom yum, and green curry.</p>
+                <a href="thailand-recipes.html">View Recipes</a>
+            </div>
+        </div>
+
+        <!-- France -->
+        <div class="country-card">
+            <img src="images/france.jpg" alt="French Cuisine">
+            <div class="country-details">
+                <h3>France</h3>
+                <p>Renowned for croissants, baguettes, and crème brûlée.</p>
+                <a href="france-recipes.html">View Recipes</a>
+            </div>
+        </div>
+
+        <!-- Greece -->
+        <div class="country-card">
+            <img src="images/greece.jpg" alt="Greek Cuisine">
+            <div class="country-details">
+                <h3>Greece</h3>
+                <p>Known for gyros, moussaka, and tzatziki.</p>
+                <a href="greece-recipes.html">View Recipes</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2024 World Cuisine. Explore, Cook, and Enjoy!
+    </footer>
+
+</body>
+</html>
