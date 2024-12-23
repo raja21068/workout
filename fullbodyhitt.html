@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Body HITT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #4a90e2, #50e3c2);
+            color: #333;
+        }
+
+        header {
+            background-color: #4a90e2;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.8em;
+            font-weight: bold;
+            border-bottom: 5px solid #ffffff;
+        }
+
+        .content {
+            padding: 20px;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
+
+        .video-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-card iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+
+        .video-details {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .video-details h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .video-details p {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        footer {
+            background-color: #4a90e2;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.9em;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+		
+		  /* Responsive tweak: smaller iframes on very small screens */
+      @media (max-width: 480px) {
+          .video-card iframe {
+              height: 180px;
+          }
+      }
+		
+    </style>
+</head>
+<body>
+    <header>Full Body HITT</header>
+
+    <div class="content">
+        <!-- Video 1 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/rEO0GXt6yLM" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #1</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/S2IiDO8I5dY" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #2</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/ChttNE3y19s" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #3</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/5velr3fERRk" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #4</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 5 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/oEQDdc4btv8" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #5</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 6 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/g0ptmkIdfMY" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #6</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 7 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/T4MqL-okiBU" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #7</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 8 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/loQYT7C-eXE" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #8</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 9 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/QRZp0R1qjf4" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #9</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 10 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/DsrdLDIZVgA" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #10</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 11 -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/eVBbCm_t1So" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #11</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 12 (Short) -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/rOUFfgJqwrI" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #12</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 13 (Short) -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/CZQ3-MSwwBI" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #13</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 14 (Short) -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/TQPvfLCMfGc" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #14</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 15 (Short) -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/Xt7QGKnKlgA" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #15</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 16 (Short) -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/WVxOTO0kQOc" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #16</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 17 (Short) -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/n9VMX2WfMiQ" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #17</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 18 (Short) -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/G11fx5cUQHE" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #18</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 19 (Short) -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/E7KIGh21fwQ" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #19</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 20 (Short) -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/5ggz_XPU0IA" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #20</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 21 (Short) -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/z5dJ4LuRY_8" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #21</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 22 (Short) -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/B_GSlyiAFGk" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #22</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 23 (Short) -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/aQiNQeKFXHA" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #23</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 24 (Short) -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/q52rLeQ1r-E" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #24</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 25 (Short) -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/czn_rDgMC1w" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #25</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 26 (Short) -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/oKbam2_0vEw" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #26</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 27 (Short) -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/VJugtbm9F4U" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #27</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 28 (Short) -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/NJf2OxGd_js" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #28</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 29 (Short) -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/LTP1NLhemFk" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #29</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 30 (Short) -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/cszC05uGbMA" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #30</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 31 (Short) -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/7E11Xjog5FE" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #31</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 32 (Short) -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/9LeatEA0Y74" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #32</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+
+        <!-- Video 33 (Short) -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/uFjGG-rb-EE" allowfullscreen></iframe>
+            <div class="video-details">
+                <h3>Video #33</h3>
+                <p>Duration: 5 minutes</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
